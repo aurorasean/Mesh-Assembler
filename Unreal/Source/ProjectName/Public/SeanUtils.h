@@ -10,9 +10,6 @@
 #include "AssetRegistry/AssetRegistryModule.h"
 #include "Kismet2/CompilerResultsLog.h"
 #include "SeanUtils.generated.h"
-/**
- *
- */
 
 UCLASS()
 class ProjectName_API USeanUtils : public UBlueprintFunctionLibrary
@@ -20,11 +17,6 @@ class ProjectName_API USeanUtils : public UBlueprintFunctionLibrary
 
     GENERATED_BODY()
 public:
-    USeanUtils();
-    ~USeanUtils();
-
-    UFUNCTION(BlueprintCallable, meta = (DisplayName = "Execute Sample function", Keywords = "MyScriptingLibrary sample test testing"), Category = "MyScriptingLibraryTesting")
-    static float MyScriptingLibrarySampleFunction(float Param);
 
     UFUNCTION(BlueprintCallable, meta = (Keywords = "Python Editor"), Category = "PythonEditor")
     static int32 ApplyInstanceChangesToBlueprint(AActor* Actor);

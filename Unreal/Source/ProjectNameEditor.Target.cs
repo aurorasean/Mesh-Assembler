@@ -10,8 +10,6 @@ public class ProjectNameEditorTarget : TargetRules
         Type = TargetType.Editor;
         DefaultBuildSettings = BuildSettingsVersion.V5;
 
-        ExtraModuleNames.AddRange(new string[] { "ProjectName",
-                "Kismet",  // for FWorkflowCentricApplication
-                           });
+        ExtraModuleNames.AddRange(new string[] { "ProjectName" });
     }
 }

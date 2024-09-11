@@ -9,19 +9,6 @@
 #include "AssetRegistry/AssetRegistryModule.h"
 #include <SSCSEditor.h>
 
-USeanUtils::USeanUtils()
-{
-}
-
-USeanUtils::~USeanUtils()
-{
-}
-
-float USeanUtils::MyScriptingLibrarySampleFunction(float Param)
-{
-    return -1;
-}
-
 
 void USeanUtils::AddComponentsToBlueprint(UBlueprint* Blueprint, const TArray<UActorComponent*>& Components
 ) {
@@ -31,7 +18,6 @@ void USeanUtils::AddComponentsToBlueprint(UBlueprint* Blueprint, const TArray<UA
 
 int32 USeanUtils::ApplyInstanceChangesToBlueprint(AActor* Actor)
 {
-    // return -1;
     return FKismetEditorUtilities::ApplyInstanceChangesToBlueprint(Actor);
 }
 
@@ -54,7 +40,6 @@ USCS_Node* GetNodeByClass(UBlueprint* Actor, FString cName) {
                 parentNode = SCSNode;
             }
         }
-        //parentNode = Actor->SimpleConstructionScript->FindSCSNode(nameParent);
     }
 
     // backup if it is not found in the above
@@ -83,7 +68,6 @@ UActorComponent* USeanUtils::GetComponentByNameOrDefault(UBlueprint* Actor, FStr
                 parentNode = SCSNode;
             }
         }
-        //parentNode = Actor->SimpleConstructionScript->FindSCSNode(nameParent);
     }
 
     // backup if it is not found in the above
@@ -106,7 +90,6 @@ UActorComponent* USeanUtils::AddComponentToActor(UBlueprint* Actor, UClass* Comp
     {
         return nullptr;
     }
-    //node->TagSubobjects
 
     USCS_Node* parentNode = nullptr;
 
@@ -119,13 +102,6 @@ UActorComponent* USeanUtils::AddComponentToActor(UBlueprint* Actor, UClass* Comp
         }
         else
         {
-            /* for (USCS_Node* SCSNode : Actor->SimpleConstructionScript->GetAllNodes())
-             {
-                 if (SCSNode && (SCSNode->GetVariableName() == nameParent || (SCSNode->ComponentTemplate && SCSNode->ComponentTemplate->GetFName() == nameParent)))
-                 {
-                     parentNode = SCSNode;
-                 }
-             }*/
             parentNode = Actor->SimpleConstructionScript->FindSCSNode(nameParent);
         }
     }
@@ -146,7 +122,6 @@ void USeanUtils::CompileBlueprint(UBlueprint* Blueprint)
 {
     if (Blueprint)
     {
-        // Skip saving this to avoid possible tautologies when saving and allow the user to manually save
         EBlueprintCompileOptions Flags = EBlueprintCompileOptions::SkipSave;
         FKismetEditorUtilities::CompileBlueprint(Blueprint, Flags);
     }

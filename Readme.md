@@ -6,17 +6,15 @@ This is the Unreal Engine parts to re-assemble your model into an actor
 
 ## In action!
 
-<video controls src="Docs/UnrealReAssembler.mp4" title="Title"></video>
+// need a video somewhere
 
 ## How this works
 
-<iframe src="https://blueprintue.com/render/k4mo1o7n/" scrolling="no" allowfullscreen></iframe>
+![alt text](<Docs/Make Asset from Disassembled parts.drawio.png>)
 
 ## Setup
 
 Some setup is required in your Unreal project
-
-
 
 ### Editor plugins
 
@@ -26,6 +24,17 @@ Some setup is required in your Unreal project
 ### C++ code, Python code
 
 Copy the contents of [Unreal](/Unreal/) into your project
+
+Change these file names to match your project
+
+- Source/ProjectName
+- Source/ProjectName/ProjectName.Build.cs
+- Source/ProjectName/ProjectName.cpp
+- Source/ProjectName/ProjectName.h
+- Source/ProjectName.Target.cs
+- Source/ProjectNameEditor.Target.cs
+
+OR copy the changes from inside them to your existing files
 
 ### BluePrint Utility Class
 

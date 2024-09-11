@@ -49,7 +49,6 @@ class Runner:
         sean_utils = unreal.SeanUtils()
         component = unreal.StaticMeshComponent
 
-        sean_utils.get_component_by_name_or_default(blueprint_asset, "")
         blueprint_asset
         for x in range(len(self.meshes)):
             mesh = self.meshes[x]

@@ -10,6 +10,7 @@ public class ProjectName : ModuleRules
 
         PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
 
+        // These changes are necessary to make the plugin work in the editor
         PrivateDependencyModuleNames.AddRange(new string[] { "UnrealEd", "KismetCompiler", "AssetRegistry", "Kismet", "Python3" });
     }
 }
