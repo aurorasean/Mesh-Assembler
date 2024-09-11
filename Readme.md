@@ -6,7 +6,7 @@ This is the Unreal Engine parts to re-assemble your model into an actor
 
 ## In action!
 
-// need a video somewhere
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/B69tCFwTPr8/0.jpg)](https://www.youtube.com/watch?v=B69tCFwTPr8)
 
 ## How this works
 
@@ -18,8 +18,7 @@ Some setup is required in your Unreal project
 
 ### Editor plugins
 
-- Turn on the Python Scripting plugin in your project!!!
-
+Turn on the Python Scripting plugin in your project!!!
 
 ### C++ code, Python code
 
@@ -38,9 +37,16 @@ OR copy the changes from inside them to your existing files
 
 ### BluePrint Utility Class
 
-[Copy Me to: Content/Utils in your project](Blueprint/MakeAssetFromSkinned.uasset)
+[Copy Me to: Content/Utils in your UE project](Blueprint/MakeAssetFromSkinned.uasset)
 
-[Copy me to: Content/Base in your project](Blueprint/BB_Base_Turret.uasset)
+[Copy me to: Content/Base in your UE project](Blueprint/BB_Base_Turret_Child.uasset)
 
-[Copy me to: Content/Base in your project](Blueprint/example-4-final-skel.uasset)
+[Copy me to: Content/Base in your UE project](Blueprint/BB_Base_Turret.uasset)
 
+[Copy me to: Content/Base in your UE project](Blueprint/example-4-final-skel.uasset)
+
+### Modify MakeAssetFromSkinned BP
+
+![Change this path to your project](Docs/image.png)
+
+> Change this path to your project path!
