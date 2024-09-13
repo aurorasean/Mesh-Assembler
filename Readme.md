@@ -37,13 +37,10 @@ OR copy the changes from inside them to your existing files
 
 ### BluePrint Utility Class
 
-[Copy Me to: Content/Utils in your UE project](Blueprint/MakeAssetFromSkinned.uasset)
+[Copy Me to: Content/Utils in your UE project](Blueprint/MakeBase.uasset)
 
-[Copy me to: Content/Base in your UE project](Blueprint/BB_Base_Turret_Child.uasset)
+[Copy me to: Content/Base in your UE project](Blueprint/Base.uasset)
 
-[Copy me to: Content/Base in your UE project](Blueprint/BB_Base_Turret.uasset)
-
-[Copy me to: Content/Base in your UE project](Blueprint/example-4-final-skel.uasset)
 
 ### Modify MakeAssetFromSkinned BP
 
